@@ -1,0 +1,14 @@
+{
+    "builds": [
+    {
+    "src": "yourHR/wsgi.py",
+    "use": "@vercel/python"
+    }
+    ],
+    "routes": [
+    {
+    "src": "/(.*)",
+    "dest": "yourHR/wsgi.py"
+    }
+   ]
+}
